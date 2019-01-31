@@ -1,4 +1,4 @@
-These are generic instructions for deploying a lambda scraper. You will need to have appropriate permissions. As of October 2018, this deployment requires Python 3.6.
+These are generic instructions for deploying a lambda scraper. You will need to have appropriate permissions. As of January 2019, this deployment requires Python 3.6.8.
 
 ## To build ##
 1. Run `pipenv install`
