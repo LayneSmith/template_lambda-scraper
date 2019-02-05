@@ -6,7 +6,7 @@ import boto3
 
 def upload_data_s3(data, output_file_path, file_type):
     s3 = boto3.resource('s3')
-    bucket = s3.Bucket('interactives.dallasnews.com')
+    bucket = s3.Bucket('bigkillerdfw')
 
     if file_type == 'csv':
         content_type = 'text/csv'
