@@ -5,15 +5,15 @@
         "aws_region": "us-east-2",
         "events": [{
           "function": "service.handler",
-          "expressions": ["cron(59 23 ? * MON-SAT *)", "cron(0 12 ? * MON *)"]
+          "expressions": ["rate(1 day)"]
         }],
         "keep_warm": false,
-        "lambda_description": "Lambda function that ...",
+        "lambda_description": "Lambda function that updates the Fusion division data.",
         "manage_roles": false,
         "memory_size": 512,
         "timeout_seconds": 300,
         "profile_name": null,
-        "project_name": "<PROJECT_NAME>",
+        "project_name": "fusion-division-data",
         "role_name": "lambda-s3-execution-role",
         "runtime": "python3.6",
         "s3_bucket": "bigkillerdfw-lambda-deploys"
