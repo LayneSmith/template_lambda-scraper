@@ -9,7 +9,7 @@ def handler(event, context):
     data = json.dumps(scraper_file.scrapeStuff())
 
     # Update where the file will be saved
-    bucket_filepath = 'data-store/2018/<file-name>.csv'
+    bucket_filepath = '2018/<directory>/<file-name>.csv'
 
     # Upload it - JSON
     upload_data_s3(data, bucket_filepath, 'json')
